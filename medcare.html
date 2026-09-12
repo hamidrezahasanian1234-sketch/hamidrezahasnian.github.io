@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MedCare | مرکز پزشکی</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Tahoma,Arial,sans-serif;background:#f5fbff;color:#17324d;line-height:1.8}
+header{background:#fff;box-shadow:0 2px 14px #00000012;position:sticky;top:0;z-index:10}
+.nav{max-width:1100px;margin:auto;padding:16px 22px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:24px;font-weight:bold;color:#087f8c}
+.logo span{color:#1261a0}
+nav a{color:#17324d;text-decoration:none;margin-right:22px;font-size:14px}
+nav a:hover{color:#087f8c}
+.hero{max-width:1100px;margin:35px auto;padding:65px 35px;border-radius:28px;background:linear-gradient(135deg,#dff8ff,#eef7ff);display:flex;align-items:center;gap:40px}
+.hero-text{flex:1}
+.badge{display:inline-block;background:#fff;padding:7px 14px;border-radius:30px;color:#087f8c;font-size:13px;margin-bottom:14px}
+h1{font-size:42px;line-height:1.35;margin-bottom:16px}
+h1 span{color:#087f8c}
+.hero p{color:#567080;margin-bottom:25px}
+.btn{display:inline-block;background:#087f8c;color:white;text-decoration:none;padding:11px 22px;border-radius:12px;font-weight:bold;border:0;cursor:pointer}
+.btn:hover{background:#066b76}
+.doctor{width:250px;height:250px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:100px;box-shadow:0 15px 35px #087f8c20}
+section{max-width:1100px;margin:70px auto;padding:0 22px}
+.title{text-align:center;margin-bottom:30px}
+.title h2{font-size:28px}
+.title p{color:#708492}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;padding:25px;border-radius:18px;box-shadow:0 8px 25px #17324d0d}
+.icon{font-size:35px;margin-bottom:10px}
+.card h3{margin-bottom:7px}
+.card p{font-size:14px;color:#708492}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}
+.about-box{background:#fff;padding:30px;border-radius:20px}
+.list{margin-top:15px;padding-right:20px;color:#536c7b}
+.form-box{max-width:650px;margin:auto;background:#fff;padding:30px;border-radius:20px;box-shadow:0 8px 25px #17324d0d}
+input,select,textarea{width:100%;padding:12px;margin:7px 0 14px;border:1px solid #d9e6ec;border-radius:10px;font-family:inherit}
+textarea{height:100px;resize:vertical}
+footer{margin-top:70px;background:#12324a;color:#dceaf2;text-align:center;padding:25px}
+#message{margin-top:15px;color:#087f8c;font-weight:bold}
+@media(max-width:750px){
+ nav{display:none}
+ .hero{margin:20px 15px;padding:40px 22px;flex-direction:column;text-align:center}
+ h1{font-size:31px}
+ .doctor{width:190px;height:190px;font-size:75px}
+ .cards,.about{grid-template-columns:1fr}
+ section{margin:50px auto}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">Med<span>Care</span> 🩺</div>
+    <nav>
+      <a href="#home">خانه</a>
+      <a href="#services">خدمات</a>
+      <a href="#doctor">پزشک</a>
+      <a href="#appointment">نوبت‌دهی</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <div class="hero">
+    <div class="hero-text">
+      <div class="badge">سلامت شما، اولویت ماست</div>
+      <h1>مراقبت پزشکی <span>ساده و مطمئن</span></h1>
+      <p>یک وب‌سایت نمونه برای معرفی مرکز پزشکی، خدمات و دریافت درخواست نوبت.</p>
+      <a class="btn" href="#appointment">درخواست نوبت</a>
+    </div>
+    <div class="doctor">👨‍⚕️</div>
+  </div>
+
+  <section id="services">
+    <div class="title">
+      <h2>خدمات پزشکی</h2>
+      <p>نمونه‌ای از خدمات این مرکز</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="icon">🩺</div><h3>معاینه عمومی</h3><p>بررسی وضعیت عمومی و ارائه راهنمایی پزشکی.</p></div>
+      <div class="card"><div class="icon">🧠</div><h3>مشاوره تخصصی</h3><p>مشاوره و بررسی اولیه برای مشکلات مختلف.</p></div>
+      <div class="card"><div class="icon">❤️</div><h3>بررسی سلامت</h3><p>ارزیابی‌های دوره‌ای و آموزش سبک زندگی سالم.</p></div>
+    </div>
+  </section>
+
+  <section id="doctor">
+    <div class="title"><h2>درباره پزشک</h2><p>معرفی کوتاه</p></div>
+    <div class="about">
+      <div class="about-box">
+        <h2>دکتر علی رضایی</h2>
+        <p>پزشک عمومی و مدیر نمونه مرکز MedCare</p>
+        <ul class="list">
+          <li>۱۰ سال تجربه پزشکی</li>
+          <li>برخورد حرفه‌ای و صمیمی</li>
+          <li>ارائه مشاوره و معاینه عمومی</li>
+        </ul>
+      </div>
+      <div class="about-box">
+        <h2>چرا MedCare؟</h2>
+        <p>این بخش برای تمرین طراحی سایت ساخته شده و می‌تواند با اطلاعات واقعی پروژه شما جایگزین شود.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="appointment">
+    <div class="title"><h2>درخواست نوبت</h2><p>فرم زیر را تکمیل کنید.</p></div>
+    <div class="form-box">
+      <form id="appointmentForm">
+        <label>نام و نام خانوادگی</label>
+        <input type="text" id="name" placeholder="مثلاً سینا احمدی" required>
+        <label>شماره تماس</label>
+        <input type="tel" placeholder="09xxxxxxxxx" required>
+        <label>نوع خدمت</label>
+        <select required>
+          <option value="">انتخاب کنید</option>
+          <option>معاینه عمومی</option>
+          <option>مشاوره تخصصی</option>
+          <option>بررسی سلامت</option>
+        </select>
+        <label>توضیحات</label>
+        <textarea placeholder="توضیحات دلخواه..."></textarea>
+        <button class="btn" type="submit">ثبت درخواست</button>
+        <div id="message"></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 MedCare — پروژه آموزشی طراحی سایت
+</footer>
+
+<script>
+document.getElementById("appointmentForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  const name = document.getElementById("name").value.trim();
+  document.getElementById("message").textContent =
+    "درخواست شما برای " + name + " با موفقیت ثبت شد. (نمونه آموزشی)";
+  this.reset();
+});
+</script>
+
+</body>
+</html>
